@@ -73,7 +73,7 @@ submitBtn.addEventListener("click", function () {
 function encrypt() {
   finalMsg = inputMessage.value;
   for (let i = 0; i < finalMsg.length; i++) {
-    codeAns[i] = finalMsg.charCodeAt(i) + 2;
+    codeAns[i] = finalMsg.charCodeAt(i) + 10;
     ans[i] = String.fromCharCode(codeAns[i]);
   }
   finalEncryptedMsg = ans.join("");
@@ -83,7 +83,7 @@ function encrypt() {
 function decrypt() {
   finalMsg = inputMessage.value;
   for (let i = 0; i < finalMsg.length; i++) {
-    codeAns[i] = finalMsg.charCodeAt(i) - 2;
+    codeAns[i] = finalMsg.charCodeAt(i) - 10;
     ans[i] = String.fromCharCode(codeAns[i]);
   }
   finalEncryptedMsg = ans.join("");
